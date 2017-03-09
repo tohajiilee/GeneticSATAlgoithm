@@ -1,8 +1,0 @@
-/**
- * 
- */
-/**
- * @author JOEL
- *
- */
-package geneticsat;
