@@ -7,7 +7,12 @@ package geneticsat;
 public class Clause{
 	public int[] variables;
 
+	public Clause(){
+		variables = new int[3];
+	}
+
 	public Clause(int v1, int v2, int v3){
+		variables = new int[3];
 		variables[0] = v1;
 		variables[1] = v2;
 		variables[2] = v3;
@@ -23,10 +28,10 @@ public class Clause{
 				case 1:
 					examvar = b;
 					break;
-				case 3:
+				case 2:
 					examvar = c;
 					break;
-				default:							// This should never occur
+				default:												// This should never occur
 					break;
 			}
 			if(variables[i] < 0){
